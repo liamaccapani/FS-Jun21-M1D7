@@ -14,3 +14,9 @@ let changeAddress = function () {
   return newAddress
 
 }
+
+let createAllClasses = function {
+  let parentNode = document.getElementsByTagName('ul')
+  let allLinks = parentNode.quesrySelectorAll('li')
+  allLinks.classList.add('amazonLink') //not finished
+}
