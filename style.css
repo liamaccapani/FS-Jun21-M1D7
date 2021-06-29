@@ -1,3 +1,11 @@
+* {
+    color: darkgrey;
+}
+
+h1 {
+    color: darkkhaki;
+}
+
 td img {
     width: 500px;
     background-size: cover;

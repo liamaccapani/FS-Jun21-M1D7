@@ -4,3 +4,6 @@ let changeTitle = function() {
   return newTitle
 }
 
+let nightMode = function() {
+  let newBackground = document.body.style.backgroundColor = "black"
+}
