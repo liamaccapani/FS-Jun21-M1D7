@@ -4,12 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <h1>Better not call</h1>
+        <button onclick="changeTitle()">Click here for a better name</button>
+    </header>
+
+    <main>
+
+        <section>
+            <table>
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td><img src="https://images-na.ssl-images-amazon.com/images/I/71T5Oy5tbhL._AC_SX569_.jpg" alt="Samsung Galaxy A51 Smartphone"></td>
+                    <td>Samsung Galaxy A51 Smartphone</td>
+                    <td>Display 6.5" Super AMOLED</td>
+                    <td>254,99 €</td>
+                </tr>
+                <tr>
+                    <td><img src="data:image/jpeg;base64,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"
+                        alt="DOOGEE X95 Smartphone">
+                    <td>DOOGEE X95 Smartphone</td>
+                    <td>Display, 4350mAh</td>
+                    <td>84,99 €</td>
+                </tr>
+                <tr>
+                    <td><img src="https://images-na.ssl-images-amazon.com/images/I/613IUkuAwfS._AC_SY450_.jpg" alt="OUKITEL C21 Smartphone"></td>
+                    <td>OUKITEL C21 Smartphone</td>
+                    <td>6.4inch FHD+, 4000mAh</td>
+                    <td>135,00 €</td>
+                </tr>
+                <tr>
+                    <td><img src="https://images-na.ssl-images-amazon.com/images/I/51AY5P4vRaL._AC_SX522_.jpg" alt="Xiaomi Redmi 7"></td>
+                    <td>Xiaomi Redmi 7</td>
+                    <td>64GB ROM, 3GB RAM, Android 9.0 (Pie), Dual SIM</td>
+                    <td>119,99 €</td>
+                </tr>
+                <tr>
+                    <td><img src="https://images-na.ssl-images-amazon.com/images/I/81PJLFYSKcL._AC_SX522_.jpg" alt="Samsung Galaxy A51 Smartphone"></td>
+                    <td>Realme 7 Smartphone</td>
+                    <td>Display 6.5" Super AMOLED</td>
+                    <td>180 €</td>
+                </tr>
+            </table>
+        </section>
+
+        <section> 
+            <ul>
+                <li>Find it <a href="https://www.amazon.it/Smartphone-Fotocamere-Posteriori-Espandibili-Batteria/dp/B082WN8SL4?th=1">here!</a></li>
+                <li>Find it <a href="https://www.amazon.it/DOOGEE-X95-Smartphone-Cellulari-Espandibili/dp/B085761S34">here!</a></li>
+                <li>Find it <a href="https://www.amazon.it/OUKITEL-C21-Smartphone-Cellulari-Cellulare/dp/B08JGN9JY8">here!</a></li>
+                <li>Find it <a href="https://www.amazon.it/Xiaomi-Redmi-Cellulare-Android-Eclipse/dp/B07PZL43VV">here!</a></li>
+                <li>Find it <a href="">here!</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- name and address -->
+    </footer> 
+
+    <div></div> Message board 
    
     
-
     <script src="script.js"></script>
 </body>
 </html>
