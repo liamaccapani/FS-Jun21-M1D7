@@ -1,13 +1,35 @@
-* {
-    color: darkgrey;
+body {
+    background-color: rgba(129, 52, 52, 0.562);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;   
+}
+
+.dark-mode {
+    background-color: rgb(34, 4, 65);
+    color: silver;
+}
+
+table, td, tr {
+    border: 1px solid black;
 }
 
 h1 {
-    color: darkkhaki;
+    color: rgb(146, 72, 140);
 }
 
-td img {
-    width: 500px;
-    background-size: cover;
+.selected {
+    color: rgb(34, 4, 65);
 }
 
+img {
+    width: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}

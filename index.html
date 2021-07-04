@@ -1,16 +1,16 @@
-Complete exercises from 1 to 6 with just plain HTML
+<!-- Complete exercises from 1 to 6 with just plain HTML
 
-EX1.: Add an h1 tag with the name of your shop
+    EX1.: Add an h1 tag with the name of your shop
 
-EX2.: Add a TABLE with the top 5 products of your shop
+    EX2.: Add a TABLE with the top 5 products of your shop
 
-EX3.: Insert for each product an image, a title, a description and a price
+    EX3.: Insert for each product an image, a title, a description and a price
 
-EX4.: Add links to existing Amazon products for each item in the table
+    EX4.: Add links to existing Amazon products for each item in the table
 
-EX5.: Add a footer with the address and the name of your shop
+    EX5.: Add a footer with the address and the name of your shop
 
-EX6.: Add a message board where the user can type a message in it (no real posting/saving features required!)
+    EX6.: Add a message board where the user can type a message in it (no real posting/saving features required!) -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,11 +23,11 @@ EX6.: Add a message board where the user can type a message in it (no real posti
 </head>
 <body>
     <header>
-        <h1>Better not call</h1>
+        <h1 id="title">Better not call</h1>
         <button onclick="changeTitle()">Click here for a better name</button>
     </header>
 
-    <button onclick="nightMode()">Click this button for night mode</button>
+    <button onclick="setNightMode()">Click this button for night mode</button>
 
     <main>
 
@@ -71,10 +71,11 @@ EX6.: Add a message board where the user can type a message in it (no real posti
                     <td>180 €</td>
                 </tr>
             </table>
+            <button onclick="hidePic()">Click me to hide all the images!</button>
         </section>
 
         <section> 
-            <ul>
+            <ul onclick="createAllClasses(event)">
                 <li>Find it <a href="https://www.amazon.it/Smartphone-Fotocamere-Posteriori-Espandibili-Batteria/dp/B082WN8SL4?th=1">here!</a></li>
                 <li>Find it <a href="https://www.amazon.it/DOOGEE-X95-Smartphone-Cellulari-Espandibili/dp/B085761S34">here!</a></li>
                 <li>Find it <a href="https://www.amazon.it/OUKITEL-C21-Smartphone-Cellulari-Cellulare/dp/B08JGN9JY8">here!</a></li>
