@@ -19,16 +19,19 @@ h1 {
 }
 
 .selected {
-    color: rgb(34, 4, 65);
+    color: rgb(146, 72, 140);
 }
+
+/* NOT IDEAL! ⤴ */
 
 img {
     width: 200px;
+    /* display: block; */
 }
 
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
 ul {
     list-style-type: none;
